@@ -1,0 +1,103 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.box{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.heading{
+    margin: 10px;
+    margin-left: 0px;
+    
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.heading h1{
+    padding: 5px;
+}
+
+.nav{
+    background-color:#f5f5f5;
+    align-items: center;
+}
+
+.button-box{
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.button{
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+.search{
+    display: flex;
+}
+
+.searchbar{
+    width: 100%;
+    margin-right: 5px;
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#delete{
+    background-color: red;
+    border-radius: 8px;
+    margin-left: 25px;
+   color: wheat;
+    
+}
+
+.headers th:last-child{
+
+background-color: beige;
+border: 1px solid;
+text-align: center;
+
+}
+
+.headers th:not(:last-child){
+    background-color: beige;
+    border: solid 1px;
+    text-align: center;
+}
+
+.headers td:not(:last-child){
+   
+    border: solid 1px;
+    text-align: center;
+}
+
+
+.headers td:last-child{
+   
+   
+  
+    text-align: center;
+    }
+
+    .table{
+        margin-top: 20px;
+       
+        border: 1px solid;
+    }

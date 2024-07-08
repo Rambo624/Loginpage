@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/adminpage.css">
+    <title>User Management</title>
+</head>
+
+<body>
+    <h1>Welcome {{username.firstname}}</h1>
+    <header>
+        <h1>User Management</h1>
+    </header>
+    <div class="box">
+        <div class="nav">
+            <div class="heading">
+                <h1>Admin Home Page</h1>
+            </div>
+            <div class="button-box">
+              <a href="/admin/adduser">  <button class="button">Add User</button></a>
+                <button class="button"> <a href="/admin/logout">Log Out</a></button>
+            </div>
+        </div>
+        <div class="search">
+            <div class="searchbar">
+                <input type="text" placeholder="Search User" class="searchbar">
+            </div>
+            <button>
+                Search
+            </button>
+        </div>
+<table class="table">
+    <thead>
+        <tr class="headers" >
+            <th >First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+            <th>Delete User</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each admins}}
+        <tr class="headers">
+            <td>{{firstname}}</td>
+            <td>{{lastname}}</td>
+            <td>{{email}}</td>
+            <td><a href="/admin/edit?id={{_id}}"><button class="button">Edit User</button></a></td>
+            <form action="/admin/delete/{{_id}}" method="post">
+                <td><button id="delete">X</button></td>
+            </form>
+            
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+
+       
+
+        
+    </div>
+
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+
+</html>
